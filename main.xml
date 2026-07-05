@@ -1,0 +1,5 @@
+<table>
+    <Hooks>   
+	    <hook file="AutoTranslator.lua" source_file="lib/managers/localizationmanager"/>
+    </Hooks>
+</table>
