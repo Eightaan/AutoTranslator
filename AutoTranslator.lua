@@ -40,6 +40,7 @@ end
 function AutoTranslator:lookupTranslation(channel_id, name, msg, color, icon)
 	if not name or name == "" then return end
 	if tostring(name):lower() == "system" then return end
+	if tostring(msg):match("^GNAP/") then return end
 
 	local Current = math.round(Application:time())
 	local msg_key = tostring(Idstring(msg):key())
